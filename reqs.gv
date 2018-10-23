@@ -1,0 +1,32 @@
+digraph G {
+  node [shape = rectangle];
+  MATH1300 -> CSCI1300 [dir = both, arrowtail = diamond];
+  CSCI1300 -> CSCI2270;
+  MATH1300 -> CSCI2270;
+  CSCI2270 -> CSCI2400;
+  MATH1300 -> MATH2300;
+  MATH2300 -> CSCI2820;
+  CSCI1300 -> CSCI2824;
+  MATH1300 -> CSCI2824;
+  CSCI2270 -> CSCI3155;
+  CSCI2824 -> CSCI3155;
+  CSCI2270 -> CSCI3104;
+  MATH2300 -> CSCI3104;
+  CSCI2824 -> CSCI3104;
+  CSCI2270 -> CSCI3308;
+  CSCI2270 -> CSCI3022;
+  A -> B [label = "Must take A before B"];
+  C -> D [dir = both, arrowtail = diamond, label = "Must take C before or with D"];
+  MATH1300 [label = "MATH 1300\nMATH 1310\nAPPM 1345\nAPPM 1350\n(calc 1)", URL="https://catalog.colorado.edu/search/?search=MATH+1300"];
+  MATH2300 [label = "MATH 2300\nAPPM 1360\n(calc 2)", URL="https://catalog.colorado.edu/search/?search=MATH+2300"];
+  CSCI1300 [label = "CSCI 1300\nCSCI 1320\n(programming intro)", URL="https://catalog.colorado.edu/search/?search=CSCI+1300"];
+  CSCI2270 [label = "CSCI 2270\n(data structures)", URL="https://catalog.colorado.edu/search/?search=CSCI+2270"];
+  CSCI2400 [label = "CSCI 2400\n(computer systems)", URL="https://catalog.colorado.edu/search/?search=CSCI+2400"];
+  CSCI3104 [label = "CSCI 3104\n(algorithms)", URL="https://catalog.colorado.edu/search/?search=CSCI+3104"];
+  CSCI3308 [label = "CSCI 3308\n(software tools & dev)", URL="https://catalog.colorado.edu/search/?search=CSCI+3308"];
+  CSCI3155 [label = "CSCI 3155\n(programming languages)", URL="https://catalog.colorado.edu/search/?search=CSCI+3155"];
+  CSCI2824 [label = "CSCI 2824\nECEN 2703\nAPPM 3170\nMATH 2001\n(discrete structures)", URL="https://catalog.colorado.edu/search/?search=CSCI+2824"];
+  CSCI2820 [label = "CSCI 2820\nMATH 2130\nAPPM 3310\n(linear algebra)", URL="https://catalog.colorado.edu/search/?search=CSCI+2820"];
+  CSCI3022 [label = "CSCI 3022\n(statistics)", URL="https://catalog.colorado.edu/search/?search=CSCI+3022"];
+  #CSCI1000 [label = "CSCI 1000\n(intro)", URL="https://catalog.colorado.edu/search/?search=CSCI+1000"];
+}

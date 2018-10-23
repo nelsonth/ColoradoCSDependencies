@@ -1,0 +1,21 @@
+digraph G {
+  node [shape = rectangle];
+  CSCI1300 -> CSCI2270;
+  CSCI2270 -> CSCI2400;
+  CSCI1300 -> CSCI2824;
+  CSCI2270 -> CSCI3155;
+  CSCI2824 -> CSCI3155;
+  CSCI2270 -> CSCI3104;
+  CSCI2824 -> CSCI3104;
+  CSCI2270 -> CSCI3308;
+  CSCI2270 -> CSCI3022;
+  A -> B [label = "Must take A before B"];
+  CSCI1300 [label = "CSCI 1300\n(programming intro)", URL="https://catalog.colorado.edu/search/?search=CSCI+1300"];
+  CSCI2270 [label = "CSCI 2270\n(data structures)", URL="https://catalog.colorado.edu/search/?search=CSCI+2270"];
+  CSCI2400 [label = "CSCI 2400\n(computer systems)", URL="https://catalog.colorado.edu/search/?search=CSCI+2400"];
+  CSCI3104 [label = "CSCI 3104\n(algorithms)", URL="https://catalog.colorado.edu/search/?search=CSCI+3104"];
+  CSCI3308 [label = "CSCI 3308\n(software tools & dev)", URL="https://catalog.colorado.edu/search/?search=CSCI+3308"];
+  CSCI3155 [label = "CSCI 3155\n(programming languages)", URL="https://catalog.colorado.edu/search/?search=CSCI+3155"];
+  CSCI2824 [label = "CSCI 2824\n(discrete structures)", URL="https://catalog.colorado.edu/search/?search=CSCI+2824"];
+  CSCI3022 [label = "CSCI 3022\n(statistics)", URL="https://catalog.colorado.edu/search/?search=CSCI+3022"];
+}
